@@ -245,10 +245,10 @@ with gr.Blocks() as demo:
                 ["examples/videos/v_-EIsT868Trw.mp4", "0 3.1\n3 11.5\n11.5 24.2\n24.2 45\n45 82\n82 157", "What is the woman doing?"],
                 ["examples/videos/v_-EIsT868Trw.mp4", "0 75\n75 157", "What is the woman doing?"],
                 ["examples/videos/v_-EIsT868Trw.mp4", "Automatic detection", "What is the woman doing?"],
-                ["examples/videos/v_cCDffwsJvsY.mp4", "0 3\n3 5.5\n5.5 22.3\n22.3 32.2\n32.2 52.1\n52.1 65\n65 70.4\n70.4 81.2\n81.2 86.2\n86.2 90\n90 95.7\n95.7 103.8\n103.8 111", "What are the steps the person takes in the video?"],
-                ["examples/videos/v_cCDffwsJvsY.mp4", "Automatic detection", "What are the steps the person takes in the video?"],
-                ["examples/videos/aV14BKrGai8_45_202.mp4", "0 21.2\n21.2 28.5\n28.5 38.0\n38.0 51.2\n51.2 61.3\n61.2 73.3\n73.3 82.2\n82.2 90.1\n90.1 99.5\n99.5 108\n108 113.6\n113.6 116.7\n116.7 122\n122 128.8\n129.2 143\n143 156", "What objects appears in the video? List them all, and describe where they are."],
-                ["examples/videos/aV14BKrGai8_45_202.mp4", "Automatic detection", "What objects appears in the video? List them all, and describe where they are."]
+                # ["examples/videos/v_cCDffwsJvsY.mp4", "0 3\n3 5.5\n5.5 22.3\n22.3 32.2\n32.2 52.1\n52.1 65\n65 70.4\n70.4 81.2\n81.2 86.2\n86.2 90\n90 95.7\n95.7 103.8\n103.8 111", "What are the steps the person takes in the video?"],
+                # ["examples/videos/v_cCDffwsJvsY.mp4", "Automatic detection", "What are the steps the person takes in the video?"],
+                # ["examples/videos/aV14BKrGai8_45_202.mp4", "0 21.2\n21.2 28.5\n28.5 38.0\n38.0 51.2\n51.2 61.3\n61.2 73.3\n73.3 82.2\n82.2 90.1\n90.1 99.5\n99.5 108\n108 113.6\n113.6 116.7\n116.7 122\n122 128.8\n129.2 143\n143 156", "What objects appears in the video? List them all, and describe where they are."],
+                # ["examples/videos/aV14BKrGai8_45_202.mp4", "Automatic detection", "What objects appears in the video? List them all, and describe where they are."]
             ],
             inputs=[video, input_splits, text_input],
         )
