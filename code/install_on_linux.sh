@@ -1,3 +1,6 @@
+wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
+chmod +x Anaconda3-2023.09-0-Linux-x86_64.sh
+./Anaconda3-2023.09-0-Linux-x86_64.sh
 git clone https://github.com/websieu/Shot2Story Shot2Story
 cd /root/Shot2Story/code
 conda init bash
