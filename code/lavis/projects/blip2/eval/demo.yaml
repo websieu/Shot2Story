@@ -14,7 +14,7 @@ model:
   num_query_token: 32
   ckpt: "./pretrain/shot_av_best_epoch.pth"
   # Vicuna
-  llama_model: "YOUR_VICUNA_7B_DIR"
+  llama_model: "meta-llama/Llama-2-7b-chat-hf"
   visual_target: True
   audio_target: False
   asr_audio: True
@@ -48,6 +48,17 @@ datasets:
         eval:
           name: "blip_caption"
           max_words: 600
+    build_info:
+      # Be careful not to append minus sign (-) before split to avoid itemizing
+      annotations:
+        20k_train:
+          storage: ../data/annotations/20k_train.json
+        20k_val:
+          storage: ../data/annotations/20k_val.json 
+        20k_test:
+          storage: ../data/annotations/20k_test.json
+      videos:
+        storage: videos
 
 run:
   task: video_text_pretrain
