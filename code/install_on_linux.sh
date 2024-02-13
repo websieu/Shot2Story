@@ -30,5 +30,6 @@ git config --global user.name "Raymondt"
 git config pull.rebase true
 git commit -m "a"
 
+huggingface-cli login
 cd /root/Shot2Story/code
 python demo_video.py
