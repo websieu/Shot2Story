@@ -131,13 +131,13 @@ class VideoMiniGPT4(Blip2Base):
                 torch_dtype=torch.float16,
                 load_in_8bit=True,
                 device_map="auto"
-            )
+            ).bfloat16()
         else:
             self.llama_model = LlamaForCausalLM.from_pretrained(
                 llama_model,
                 torch_dtype=torch.float16,
                 low_cpu_mem_usage=True
-            )
+            ).bfloat16()
 
         for name, param in self.llama_model.named_parameters():
             param.requires_grad = False
