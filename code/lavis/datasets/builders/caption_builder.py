@@ -24,13 +24,13 @@ from lavis.datasets.datasets.video_caption_datasets import (
     VideoAVWholeCaptionEvalDataset,
 )
 
-from lavis.datasets.datasets.hdfs_video_caption_datasets import (
-    HDFSVideoCaptionDataset,
-    HDFSVideoCaptionEvalDataset,
-)
-from lavis.datasets.datasets.hdfs_image_caption_datasets import (
-    HDFSImageCaptionDataset,
-)
+# from lavis.datasets.datasets.hdfs_video_caption_datasets import (
+#     HDFSVideoCaptionDataset,
+#     HDFSVideoCaptionEvalDataset,
+# )
+# from lavis.datasets.datasets.hdfs_image_caption_datasets import (
+#     HDFSImageCaptionDataset,
+# )
 @registry.register_builder("coco_caption")
 class COCOCapBuilder(BaseDatasetBuilder):
     train_dataset_cls = COCOCapDataset
@@ -49,23 +49,23 @@ class COCOCapBuilder(BaseDatasetBuilder):
         "default": "configs/datasets/nocaps/defaults.yaml",
     }
 
-@registry.register_builder("webvid_caption")
-class WebVidCapBuilder(BaseDatasetBuilder):
-    train_dataset_cls = HDFSVideoCaptionDataset
-    eval_dataset_cls = HDFSVideoCaptionEvalDataset
+# @registry.register_builder("webvid_caption")
+# class WebVidCapBuilder(BaseDatasetBuilder):
+#     train_dataset_cls = HDFSVideoCaptionDataset
+#     eval_dataset_cls = HDFSVideoCaptionEvalDataset
 
-    DATASET_CONFIG_DICT = {
-        "default": "configs/datasets/webvid/defaults_cap.yaml",
-    }
+#     DATASET_CONFIG_DICT = {
+#         "default": "configs/datasets/webvid/defaults_cap.yaml",
+#     }
 
-@registry.register_builder("conceptual_caption_3m_hdfs")
-class WebVidCapBuilder(BaseDatasetBuilder):
-    train_dataset_cls = HDFSImageCaptionDataset
-    eval_dataset_cls = HDFSVideoCaptionEvalDataset
+# @registry.register_builder("conceptual_caption_3m_hdfs")
+# class WebVidCapBuilder(BaseDatasetBuilder):
+#     train_dataset_cls = HDFSImageCaptionDataset
+#     eval_dataset_cls = HDFSVideoCaptionEvalDataset
 
-    DATASET_CONFIG_DICT = {
-        "default": "configs/datasets/conceptual_caption/defaults_3m_hdfs.yaml",
-    }
+#     DATASET_CONFIG_DICT = {
+#         "default": "configs/datasets/conceptual_caption/defaults_3m_hdfs.yaml",
+#     }
 
 
 @registry.register_builder("msrvtt_caption")
