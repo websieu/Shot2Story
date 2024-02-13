@@ -14,7 +14,7 @@ model:
   num_query_token: 32
   ckpt: "./pretrain/shot_av_best_epoch.pth"
   # Vicuna
-  llama_model: "meta-llama/Llama-2-70b-chat"
+  llama_model: "meta-llama/Llama-2-70b-hf"
   visual_target: True
   audio_target: False
   asr_audio: True
